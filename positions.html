@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <link rel="stylesheet" href="positions.css">
+  <div class="slider-container">
+    <div class="left-slide">
+      <div style="background-color:#f8ce8a">
+        <h1 style="color: #ff9d00;text-decoration: underline;">Belt Bondage</h1>
+        <p style="text-align: center;font-size: 1.5rem;color: black;">Being on top allows her to rub her clit against his pelvic bone or reach down with her fingers for some extra stimulation.</p>
+      </div>
+      <div style="background-color: #ffaebc">
+        <h1 style="color: #ec2e4e;text-decoration: underline;">Hands Behind Ankle</h1>
+        <p style="text-align: center;font-size: 1.5rem;color: black;">Entering into the kinky portion of our list, this is a position that you’ll want a comfortable pair of cuffs, a good deal of flexibility and some pre-game discussion.</p>
+      </div>
+      <div style="background-color: #b4f8c8">
+        <h1 style="color: #11ec53;text-decoration: underline;">Women On Top</h1>
+        <p style="text-align: center;font-size: 1.5rem;color: black;">Similar to cowgirl, the woman climbs on top of you but lies chest to chest, like an inverted missionary position. </p>
+      </div>
+      <div style="background-color: #a0e7e5">
+        <h1 style="color: rgb(75, 75, 235);text-decoration: underline;">Standing Ovation</h1>
+        <p style="text-align: center;font-size: 1.5rem;color: black;">Standing sex positions can be an incredibly hot way to change things up if you and your partner find yourself in the same old positions time and time again.</p>
+      </div>
+      <div style="background-color: #c197d2">
+      <h1 style="color: #613659;text-decoration: underline;">Queen Takes King</h1>
+      <p style="text-align: center;font-size: 1.5rem;color: black;">He places his hands on her hips to help raise and lower her, or if she is strong enough, he can play with her breasts and clitoris.</p>
+      </div>
+    </div>
+    <div class="right-slide">
+      <div style="  
+       background-image:  url(queentakesking.jpg);  
+      "></div>
+      <div style="  
+         background-image:  url(standing-room-only.png);  
+      "></div>
+      <div style="  
+         background-image:  url(woman-on-top-sex-position_1024x1024.png);"></div>
+      <div style="background-image: url(hands-behind-ankle.png); "></div>
+      <div style="background-image: url(beltbondage.jpg); "></div>
+    </div>
+    <div class="action-buttons">
+      <button class="down-button">
+        <i class="fas fa-arrow-down"></i>
+      </button>
+      <button class="up-button">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </div>
+  <script> const sliderContainer = document.querySelector(".slider-container");
+    const slideRight = document.querySelector(".right-slide");
+    const slideLeft = document.querySelector(".left-slide");
+    const upButton = document.querySelector(".up-button");
+    const downButton = document.querySelector(".down-button");
+    const slidesLength = slideRight.querySelectorAll("div").length;
+    let activeSlideIndex = 0;
+    slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
+    const changeSlide = (direction) => {
+      const sliderHeight = sliderContainer.clientHeight;
+      if (direction === "up") {
+        activeSlideIndex++;
+        if (activeSlideIndex > slidesLength - 1) activeSlideIndex = 0;
+      } else if (direction === "down") {
+        activeSlideIndex--;
+        if (activeSlideIndex < 0) activeSlideIndex = slidesLength - 1;
+      }
+      slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight
+        }px)`;
+      slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight
+        }px)`;
+    };
+    upButton.addEventListener("click", () => changeSlide("up"));
+    downButton.addEventListener("click", () => changeSlide("down"));</script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <link rel="stylesheet" href="fantasy.css">
+  <div class="flex-container">  
+    <div class="spinner"><p>  
+      <div class="cube1"></div>  
+      <div class="cube2"></div>  
+      Loading...  
+      </p>  
+    </div>  
+    <div class="flex-slide home">  
+      <div class="flex-title flex-title-home">BDSM</div>  
+      <div class="flex-about flex-about-home"><p>BDSM sex is a term for a variety of sexual practices that include bondage, discipline, dominance, submission, and sadism.</p></div>  
+    </div>  
+    <div class="flex-slide about">  
+      <div class="flex-title">ROLE PLAY</div>  
+      <div class="flex-about"><p>Role play can boost your confidence, make you more aware of your body and also add spark to your character since you've tried something refreshing and new, which has probably led to great sex.</p></div>  
+    </div>  
+    <div class="flex-slide work">  
+      <div class="flex-title">Locker room</div>  
+      <div class="flex-about"><p>No other sex tube is more popular and features more Locker Room scenes than Pornhub!</p>  
+         
+      </div>  
+    </div>  
+    <div class="flex-slide contact">  
+      <div class="flex-title">Femdom</div>  
+          <div class="flex-about">  
+            <p>Femdom refers to a woman who is a dominant partner in Soft BDSM sexual activities.</p>  
+            
+      </div>  
+    </div>  
+  </div>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/jquery.waitforimages.min.js"></script>  
+  <script>(function(){  
+    $('.flex-container').waitForImages(function() {  
+         $('.spinner').fadeOut();  
+    }, $.noop, true);  
+    $(".flex-slide").each(function(){  
+         $(this).hover(function(){  
+              $(this).find('.flex-title').css({  
+                   transform: 'rotate(0deg)',  
+                   top: '10%'  
+              });  
+              $(this).find('.flex-about').css({  
+                   opacity: '1'  
+              });  
+         }, function(){  
+              $(this).find('.flex-title').css({  
+                   transform: 'rotate(90deg)',  
+                   top: '15%'  
+              });  
+              $(this).find('.flex-about').css({  
+                   opacity: '0'  
+              });  
+         })  
+    });  
+})(); </script>
+</body>
+</html>

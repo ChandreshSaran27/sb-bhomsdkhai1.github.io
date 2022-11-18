@@ -1,0 +1,88 @@
+*{margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+}
+
+body {
+width: 100vw;
+height: 100vh;
+background:pink;
+background-image: url(banana.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+
+}
+.lady1{
+  height: 14rem;
+    width: 24rem;
+    position: absolute;
+    top: 14%;
+    left: 47%;
+}
+.well{
+  text-transform: uppercase;
+  letter-spacing: 8px;
+overflow: hidden;
+font-size: .6rem;
+width: 0;
+white-space: nowrap;
+animation: 
+  typing 5s forwards  ease-in-out;
+width: 0;
+}
+@keyframes typing {
+from { width: 0 ;color:#bc3247;}
+to { width: 100% ; color: #a11a42f6;}
+}
+
+h1 {
+font-weight: normal;
+font-size: xxx-large;
+position: absolute;
+  width: 30%;
+  padding: 2.6em 3.8em;
+  cursor: pointer;
+  top: 7.5rem;
+  left: 35%;
+  height: 7.5rem;
+  
+}
+
+
+/* Scroller styling */
+.scroller {
+height: 1.2em;
+line-height: 1.2em;
+position: absolute;
+overflow: hidden;
+width: 10em;
+}
+
+.scroller>span {
+position: absolute;
+letter-spacing: 4px;
+  top: 6rem;
+  left: 2rem;
+  animation: slide 8s infinite;
+  color: #593251;
+  font-size: -webkit-xxx-large;
+}
+
+@keyframes slide {
+0% {
+    top: 0;
+}
+
+25% {
+    top: -1.2em;
+}
+
+50% {
+    top: -2.4em;
+}
+
+75% {
+    top: -3.6em;
+}
+}

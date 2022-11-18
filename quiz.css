@@ -1,0 +1,100 @@
+* {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+body{
+background-color: #fcdfe0;
+}
+.cond{
+	position: absolute;
+	width: 5rem;
+	transform: rotate(45deg);
+}
+.prompt {
+	display: block;
+	font-size: 20px;
+}
+h1{
+	color: #e43d40;
+	text-decoration: underline;
+	font-size: 5rem;
+}
+.btn {
+	margin: 0 20px 0 20px;
+}
+
+.btn-strongly-agree {
+	color: #ed0b4f;
+	font-weight: bold;
+}
+
+.btn-strongly-agree.active,
+.btn-strongly-agree:active,
+.btn-strongly-agree:focus,
+.btn-strongly-agree:active:focus,
+.btn-strongly-agree.active:focus,
+.btn-strongly-agree:hover
+ {
+	background-color: #ff9192;
+}
+
+.btn-agree {
+	color: #ff84a9;
+}
+
+.btn-agree.active,
+.btn-agree:active,
+.btn-agree:focus,
+.btn-agree:active:focus,
+.btn-agree.active:focus,
+.btn-agree:hover {
+	background-color: #ff9192;
+}
+
+.btn-disagree {
+	color: #e43d40;
+}
+
+.btn-disagree.active,
+.btn-disagree:active,
+.btn-disagree:focus,
+.btn-disagree:active:focus,
+.btn-disagree.active:focus,
+.btn-disagree:hover {
+	background-color: rgba(226, 129, 129, 0.5);
+}
+
+.btn-strongly-disagree {
+	color: #e43d40;
+	font-weight: bold;
+}
+
+.btn-strongly-disagree.active,
+.btn-strongly-disagree:active,
+.btn-strongly-disagree:focus,
+.btn-strongly-disagree:active:focus,
+.btn-strongly-disagree.active:focus,
+.btn-strongly-disagree:hover {
+	background-color: #ff9192;
+}
+
+.bottom {
+	margin-bottom: 100px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+/* RESULTS */
+.results {
+	margin-bottom: 40px;
+	margin-top: 40px;
+	
+}
+
